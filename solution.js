@@ -34,8 +34,12 @@ let timeConversion = (s) => {
 // Problem 4: String Repeat
 
 let repeatStr = (n, s) => {
-    
+    if (n < 0) return '';
+    return s.repeat(n);
 }
+
+console.log(repeatStr(5, 'hello'));
+
 
 // Problem 5: Reversed Strings
 
