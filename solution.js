@@ -44,8 +44,9 @@ console.log(repeatStr(5, 'hello'));
 // Problem 5: Reversed Strings
 
 let solution = (str) => {
-    
+    return str.split('').reverse().join('');
 }
+// console.log(solution('world'));
 
 // Problem 6: Sum of Positive
 
