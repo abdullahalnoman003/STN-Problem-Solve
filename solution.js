@@ -65,8 +65,11 @@ console.log(positiveSum([1, -4, 7, 12]));
 // Problem 7: Summation
 
 let summation = (num) => {
-    
+    sum = num * (num + 1) / 2;
+    return sum;
 }
+
+console.log(summation(8));
 
 // Problem 8: Convert a Boolean to a String
 
