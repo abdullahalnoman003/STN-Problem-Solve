@@ -52,8 +52,16 @@ let solution = (str) => {
 
 let positiveSum = (arr) => {
     
+    sum = 0;
+    arr.map(num =>{
+        if(num > 0){
+            sum += num;
+        }
+    })
+    return sum;
 }
 
+console.log(positiveSum([1, -4, 7, 12]));
 // Problem 7: Summation
 
 let summation = (num) => {
