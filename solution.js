@@ -74,8 +74,11 @@ console.log(summation(8));
 // Problem 8: Convert a Boolean to a String
 
 let booleanToString = (b) => {
-    
+    return b.toString();
 }
+
+console.log(booleanToString(true));
+console.log(booleanToString(false));
 
 // Problem 9: Fizz Buzz
 
