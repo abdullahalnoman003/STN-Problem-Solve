@@ -77,20 +77,35 @@ let booleanToString = (b) => {
     return b.toString();
 }
 
-console.log(booleanToString(true));
-console.log(booleanToString(false));
+// console.log(booleanToString(true));
+// console.log(booleanToString(false));
 
 // Problem 9: Fizz Buzz
 
 let fizzBuzz = (n) => {
-    
+    let result = [];
+    for (let i = 1; i <= n; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            result.push("FizzBuzz");
+        } else if (i % 3 === 0) {
+            result.push("Fizz");
+        } else if (i % 5 === 0) {
+            result.push("Buzz");
+        } else {
+            result.push(i.toString());
+        }
+    }
+    return result;
 }
+
+// console.log(fizzBuzz(15));
 
 // Problem 10: Running Sum of 1D Array
 
 let runningSum = (nums) => {
     
 }
+
 
 // Problem 11: Richest Customer Wealth
 
