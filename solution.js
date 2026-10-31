@@ -118,14 +118,24 @@ let runningSum = (nums) => {
 // Problem 11: Richest Customer Wealth
 
 let maximumWealth = (accounts) => {
-    
+
 }
 
 // Problem 12: Remove Duplicates from Sorted Array
 
 let removeDuplicates = (nums) => {
-    
+    let finalArray = [];
+    for (let i = 0; i < nums.length; i++) {
+        if (!finalArray.includes(nums[i])) {
+            finalArray.push(nums[i]);
+        }
+    }
+    return [finalArray,finalArray.length];
 }
+let [array,len] = removeDuplicates([0,0,1,1,1,2,2,3,3,4]);
+console.log("Output Array: ",array);
+console.log("Output Length: ", len);
+
 
 // Problem 13: Contains Duplicate
 
