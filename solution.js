@@ -186,8 +186,9 @@ let plusOne = (digits) => {
 // Problem 18: Reverse String
 
 let reverseString = (s) => {
-    
+    return s.reverse();
 }
+console.log(reverseString(["h","e","l","l","o"]));
 
 // Problem 19: Length of Last Word
 
