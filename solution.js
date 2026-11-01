@@ -38,7 +38,7 @@ let repeatStr = (n, s) => {
     return s.repeat(n);
 }
 
-console.log(repeatStr(5, 'hello'));
+// console.log(repeatStr(5, 'hello'));
 
 
 // Problem 5: Reversed Strings
@@ -61,7 +61,7 @@ let positiveSum = (arr) => {
     return sum;
 }
 
-console.log(positiveSum([1, -4, 7, 12]));
+// console.log(positiveSum([1, -4, 7, 12]));
 // Problem 7: Summation
 
 let summation = (num) => {
@@ -69,7 +69,7 @@ let summation = (num) => {
     return sum;
 }
 
-console.log(summation(8));
+// console.log(summation(8));
 
 // Problem 8: Convert a Boolean to a String
 
@@ -118,8 +118,22 @@ let runningSum = (nums) => {
 // Problem 11: Richest Customer Wealth
 
 let maximumWealth = (accounts) => {
-
+    let maxwealth = 0;
+    let sum = 0;
+    for (let i = 0; i < accounts.length; i++) {
+        for (let j = 0; j < accounts[i].length; j++) {
+            sum = accounts[i][j] + sum;
+        }
+        if (sum > maxwealth) {
+            maxwealth = sum;
+        }
+        sum = 0;
+        }
+        return maxwealth;
 }
+
+console.log(maximumWealth([[1,2,3],[3,2,1]]));
+console.log(maximumWealth([[1,5],[7,3],[3,5]]));
 
 // Problem 12: Remove Duplicates from Sorted Array
 
@@ -133,8 +147,10 @@ let removeDuplicates = (nums) => {
     return [finalArray,finalArray.length];
 }
 let [array,len] = removeDuplicates([0,0,1,1,1,2,2,3,3,4]);
-console.log("Output Array: ",array);
-console.log("Output Length: ", len);
+
+
+// console.log("Output Array: ",array);
+// console.log("Output Length: ", len);
 
 
 // Problem 13: Contains Duplicate
