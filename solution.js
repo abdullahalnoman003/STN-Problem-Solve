@@ -166,13 +166,31 @@ let containsDuplicate = (nums) => {
     return false;
 }
 
-console.log(containsDuplicate([1,2,3]));
+// console.log(containsDuplicate([1,2,3]));
 
 // Problem 14: Move Zeroes
 
 let moveZeroes = (nums) => {
-    
+    let nonZero = [];
+    let zeroCount = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] !== 0) {
+            nonZero.push(nums[i]);
+        } else {
+            zeroCount++;
+        }
+    }
+
+    while (zeroCount > 0) {
+        nonZero.push(0);
+        zeroCount--;
+    }
+
+    return nonZero;
 }
+
+console.log(moveZeroes([0,1,0,3,12]));
 
 // Problem 15: Merge Sorted Array
 
