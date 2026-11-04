@@ -220,8 +220,11 @@ console.log(reverseString(["h","e","l","l","o"]));
 // Problem 19: Length of Last Word
 
 let lengthOfLastWord = (s) => {
-    
+    let words = s.trim().split(' ');
+    return words[words.length - 1].length;
 }
+
+console.log(lengthOfLastWord("   fly me   to   the moon  "));
 
 // Problem 20: Longest Common Prefix
 
